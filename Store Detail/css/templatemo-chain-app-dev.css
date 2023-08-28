@@ -1,0 +1,469 @@
+/*
+
+TemplateMo 570 Chain App Dev
+
+https://templatemo.com/tm-570-chain-app-dev
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+*/
+/* 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #afafaf;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+  background: #4b8ef1;
+  color: #fff !important;
+}
+
+::-moz-selection {
+  background: #4b8ef1;
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.section-heading {
+  position: relative;
+  z-index: 2;
+}
+
+.section-heading h4 {
+  color: #2a2a2a;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.section-heading h4 em {
+  font-style: normal;
+  color: #4b8ef1;
+}
+
+.section-heading img {
+  width: 45px;
+  height: 2px;
+}
+
+.section-heading p {
+  margin-top: 10px;
+}
+
+.show-up {
+  position: relative;
+  z-index: 2;
+}
+
+.white-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #4b8ef1 !important;
+  text-transform: capitalize;
+  font-size: 15px;
+  background-color: #fff;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+}
+
+.white-button a i {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.white-button a:hover {
+  background-color: #4b8ef1;
+  color: #fff !important;
+}
+
+.text-button a {
+  font-size: 15px;
+}
+
+.text-button a i {
+  margin-left: 5px;
+  font-size: 14px;
+  transition: all .3s;
+}
+
+.text-button a:hover i {
+  margin-left: 8px;
+}
+
+.gradient-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #fff !important;
+  text-transform: capitalize;
+  font-size: 15px;
+  background: rgb(19,175,240);
+  background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+}
+
+.gradient-button a:hover {
+  color: #fff !important;
+  background: rgb(19,175,240);
+  background: linear-gradient(105deg, rgba(91,104,235,1) 0%, rgba(40,225,253,1) 100%);
+}
+
+.border-button a {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  color: #4b8ef1 !important;
+  border: 1px solid #4b8ef1;
+  text-transform: capitalize;
+  font-size: 15px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 23px;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  transition: all .5s;
+}
+
+.border-button a:hover {
+  background-color: #4b8ef1;
+  color: #fff !important;
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+
+/* 
+---------------------------------------------
+The Clients
+---------------------------------------------
+*/
+
+.the-clients {
+  margin-top: 50px;
+}
+
+.the-clients  .section-heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.the-clients  .section-heading p {
+  margin-top: 10px;
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+.the-clients .naccs {
+  position: relative;
+}
+
+.menu .thumb h4 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  color: #2a2a2a;
+}
+
+.menu .thumb span.date {
+  display: inline-block;
+  margin-top: 0px;
+  color: #afafaf;
+}
+
+.menu .thumb span.category,
+.menu .thumb span.rating {
+  font-weight: 700;
+  color: #afafaf;
+}
+
+.menu .thumb i {
+  color: #afafaf;
+}
+
+.the-clients .naccs .menu div {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: left;
+  padding: 0px 15px;
+  cursor: pointer;
+  position: relative;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.the-clients .naccs .menu div.active h4,
+.the-clients .naccs .menu div.active i,
+.the-clients .naccs .menu div.active span.rating,
+.the-clients .naccs .menu div.active .thumb {
+  color: #4b8ef1;
+}
+
+.the-clients ul.nacc {
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.the-clients ul.nacc li {
+  opacity: 0;
+  transform: translateX(-50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.the-clients ul.nacc li.active {
+  transition-delay: 0.3s;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.the-clients ul.nacc li {
+  width: 100%;
+}
+
+.the-clients .nacc .thumb .client-content img {
+  width: 76px;
+  height: 62px;
+}
+
+.the-clients .nacc .thumb .client-content {
+  padding: 60px 30px;
+  background-image: url(../images/client-bg.png);
+  background-size: cover;
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.the-clients .nacc .thumb .client-content p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 30px;
+}
+
+.the-clients .nacc .thumb .down-content {
+  margin-top: 30px;
+}
+
+.the-clients .nacc .thumb .down-content img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  display: inline;
+}
+
+.the-clients .nacc .thumb .down-content .right-content {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.the-clients .nacc .thumb .down-content .right-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.the-clients .nacc .thumb .down-content .right-content span {
+  color: #2a2a2a;
+}
+
+/* 
+---------------------------------------------
+responsive
+--------------------------------------------- 
+*/
+
+@media (max-width: 767px) {
+  .the-clients .naccs .menu div {
+    text-align: center;
+  }
+  
+  .the-clients .nacc .thumb .down-content .right-content {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .services ul.nacc li.active {
+    padding: 45px;
+  }
+  .services .naccs .menu div  {
+    font-size: 0px;
+  }
+  .the-clients .nacc .thumb .down-content {
+    text-align: center;
+  }
+  .services ul.nacc li .right-image img {
+    float: none;
+  }
+  .our-portfolio .section-heading,
+  .about-us .section-heading,
+  .about-us .about-item,
+  .about-us p,
+  .about-us .main-green-button {
+    text-align: center;
+  }
+}
