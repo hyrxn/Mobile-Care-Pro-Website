@@ -1,0 +1,357 @@
+
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+  --white-color:                  #ffffff;
+  --primary-color:                #13547a;
+  --secondary-color:              #80d0c7;
+  --section-bg-color:             #f0f8ff;
+  --custom-btn-bg-color:          #80d0c7;
+  --custom-btn-bg-hover-color:    #13547a;
+  --dark-color:                   #000000;
+  --p-color:                      #717275;
+  --border-color:                 #7fffd4;
+  --link-hover-color:             #13547a;
+
+  --body-font-family:             'Open Sans', sans-serif;
+  --title-font-family:            'Montserrat', sans-serif;
+
+  --h1-font-size:                 58px;
+  --h2-font-size:                 46px;
+  --h3-font-size:                 32px;
+  --h4-font-size:                 28px;
+  --h5-font-size:                 24px;
+  --h6-font-size:                 22px;
+  --p-font-size:                  20px;
+  --menu-font-size:               14px;
+  --btn-font-size:                18px;
+  --copyright-font-size:          16px;
+
+  --border-radius-large:          100px;
+  --border-radius-medium:         20px;
+  --border-radius-small:          10px;
+
+  --font-weight-normal:           400;
+  --font-weight-medium:           500;
+  --font-weight-semibold:         600;
+  --font-weight-bold:             700;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+section {
+    padding-top: 80px;
+  }
+  
+    /* dari template venue */
+  .blue-button a {
+    display: inline-block;
+    color: #fff;
+    background-color: #13547a;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: 2px solid #13547a;
+    transition: all 0.5s;
+  }
+  
+    /* dari template venue */
+  .blue-button a:hover {
+    background-color: transparent;
+    color: #13547a;
+  } */
+  
+  
+  /* Header Style */
+  
+  .cf:before, 
+  .cf:after {
+    content: '';
+    display: table;
+    visibility: hidden;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  /* .cf {
+    *zoom:1;
+  } */
+  
+    /* dari template venue */
+  #header {
+    overflow: visible;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  
+  #primary-nav-button {
+    background: transparent;
+    display: none;
+    position: absolute;
+    border: none;
+    bottom: 0;
+    right: 15px;
+    top: 0;
+    z-index: 9;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0;
+  }
+  
+  #primary-nav-button:hover {
+    background: rgba(0,0,0,0.05);
+  }
+  
+  #primary-nav-button.selected {
+    background: rgba(0,0,0,0.1);
+  }
+  
+  #primary-nav-button:before {
+    content: 'â˜°';
+    content: '\2261';
+    display: inline-block;
+    background-color: #13547a;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.05;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    color: inherit;
+    speak: none;
+    border: none;
+  }
+  
+  #header .logo {
+    float: left;
+  }
+  
+  #header .logo img {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .menu {
+    float: right;
+  }
+  
+  .menu li {
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    line-height: 100px;
+  }
+  
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  .menu .sub-menu li {
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  .menu li a {
+    display: block;
+    text-decoration: none;
+  }
+  
+  #primary-nav li{
+    color: #121212;
+    font-weight: bold;
+    line-height: 100px;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+  }
+
+  #primary-nav li a{ 
+    color: #fff;
+    font-weight: bold;
+    line-height: 100px;
+    padding: 0px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.5s;
+  }
+  
+  #primary-nav li > a:hover,
+  #primary-nav li.selected > a {
+    color: #13547a;
+  }
+  
+  #primary-nav.mobile {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background: #fff;
+    width: 100%;
+    right: 15px;
+    left: 0;
+    z-index: 999999;
+  }
+  
+  #primary-nav.mobile .menu {
+    text-align: center;
+    width: 100%;
+  }
+  
+  #primary-nav.mobile li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #primary-nav.mobile li:first-child  {
+    width: 100%;
+    margin: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  #primary-nav.mobile li.selected > a {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #primary-nav.mobile li:last-child {
+    border: none;
+  }
+  
+  .mobile .downarrow,
+  #primary-nav-button.mobile {
+    display: inline-block;
+  }
+
+/*---------------------------------------
+  HERO        
+-----------------------------------------*/
+.hero-section {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  
+  .hero-section .input-group {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius-large);
+    padding: 10px 15px;
+  }
+  
+  .hero-section .input-group-text {
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .hero-section input[type="search"] {
+    border: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .hero-section button[type="submit"] {
+    background-color: var(--primary-color);
+    border: 0;
+    border-radius: var(--border-radius-large) !important;
+    color: var(--white-color);
+    max-width: 150px;
+  }
+
+
+  /* ICONS STARTS */
+
+  .main-banner ul.categories {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+  }
+  
+  .main-banner ul.categories li {
+    display: inline-block;
+    text-align: center;
+    width: 18%;
+  }
+  
+  .main-banner ul.categories li a {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+  
+  .main-banner ul.categories li .icon {
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 62px;
+    color: #8d99af;
+    background-color: #fff;
+    transition: all .5s;
+  }
+  
+  .main-banner ul.categories li a:hover .icon {
+    background-color: #FFD083;
+  }
+  
+  .main-banner ul.categories li .icon img {
+    max-width: 27px;
+  }
+
+  /* ICONS ENDS */
+
+
+
+
+
+  /* Keyframes dari Venue */
+@keyframes totop-in {
+    0% {
+      top: 600px;
+      opacity: 0;
+    }
+    100% {
+      top: 0;
+      opacity: 1;
+    }  
+  }
+  
+  @keyframes totop-out {
+    0% {
+      top: 0px;
+      opacity: 1;
+    }
+    100% {
+      top: -100%;
+      opacity: 0;
+    }  
+  }
+  
+  
+  @media (max-width:992px) {
+  
+    /* dari Venue */
+    .banner .banner-caption {
+      padding: 200px 30px;
+    }
+    
+  }
